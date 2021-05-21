@@ -1,0 +1,19 @@
+{
+  "name": "twitch-stream-link",
+  "version": "1.0.0",
+  "description": "watch twitch stream on you favourite player",
+  "main": "src/stream.js",
+  "dependencies": {
+    "minimist": "^1.2.5",
+    "underscore": "^1.13.1"
+  },
+  "devDependencies": {},
+  "bin": {
+    "build.js": "./bin/stream.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fabio Paniconi",
+  "license": "MIT"
+}

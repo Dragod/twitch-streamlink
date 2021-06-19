@@ -1,6 +1,6 @@
 {
   "name": "twitch-stream-link",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "watch twitch stream on you favourite player",
   "main": "src/stream.js",
   "dependencies": {

@@ -9,11 +9,19 @@
   },
   "devDependencies": {},
   "bin": {
-    "build.js": "./bin/stream.js"
+    "stream": "bin/stream.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Fabio Paniconi",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dragod/twitch-streamlink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dragod/twitch-streamlink/issues"
+  },
+  "homepage": "https://github.com/Dragod/twitch-streamlink#readme"
 }

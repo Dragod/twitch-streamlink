@@ -28,7 +28,7 @@ function nodeExec(cmd)
     return execSync(cmd, { stdio: [0, 1, 2] });
 }
 
-const streamerName = ["zizaran", "datmodz", "moistcr1tikal", "steelmage", "stermy"];
+const streamerName = ["zizaran", "datmodz", "moistcr1tikal", "steelmage", "stermy","nugiyen"];
 
 function getStream()
 {

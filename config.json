@@ -72,6 +72,18 @@
                 "quality": "best"
             }
 
+        },
+
+        {
+            "name": "zizaran",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---Zizaran---",
+                "quality": "best"
+            }
+
         }
     ]
 }

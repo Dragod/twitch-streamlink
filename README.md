@@ -34,9 +34,28 @@ Also read this reddit guide to open video streams on android device:
 
 Clone or fork this repo to get your own version of streamer list.
 
-All you need to di is update this array:
+All you need to di is update the ```config.json```:
 
-```const streamerName = ["zizaran", "datmodz", "moistcr1tikal", "steelmage", "stermy"];```
+```json
+
+{
+    "streamer":
+    [
+        {
+            "name": "xqc",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---xQc---",
+                "quality": "best"
+            }
+
+        }
+    ]
+}
+
+```
 
 Then you need to publish your own package for it work, with npm publish.
 

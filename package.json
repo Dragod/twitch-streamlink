@@ -9,10 +9,10 @@
   },
   "devDependencies": {},
   "bin": {
-    "twitch-stream-link": "bin/stream.js"
+    "twitch-stream-link": "./stream.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./stream.js -s xqc"
   },
   "author": "Fabio Paniconi",
   "license": "MIT",

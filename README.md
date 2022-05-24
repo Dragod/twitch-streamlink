@@ -34,7 +34,7 @@ Also read this reddit guide to open video streams on android device:
 
 Clone or fork this repo to get your own version of streamer list.
 
-All you need to do is update the ```config.json```:
+All you need to do is update the ```config.json```, jsut add/remove streamers:
 
 ```json
 

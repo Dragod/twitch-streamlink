@@ -6,7 +6,12 @@ I made this tiny nodejs package because I wanted to remove twitch app from my ph
 
 ### How to use it
 
-```npx @pfcode/twitch-stream-link@latest -s shroud```
+```bash
+# List of available streamers
+npx @pfcode/twitch-stream-link@latest -a
+# Start streaming Shroud if he is online
+npx @pfcode/twitch-stream-link@latest -s shroud
+```
 
 ![image](https://db3pap002files.storage.live.com/y4mmfUz4iazbK-wOqXNjT3gvctenmdX65Bkr9JMQR0CP2LR5mDtw-rXYvD5dtSWm6vjBH-9Obryj_9CoYdxq8-8blC3DdXb8QhHD_RCubX9J4HEVrgviU68YkhnZ-mj2HbIF2YODPtC_iTszu0eclagftiGOXzI7u3I3YpyfacIg6P147P1Wml9tFkygYUIo9CI?width=510&height=1013&cropmode=none)
 

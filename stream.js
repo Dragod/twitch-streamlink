@@ -28,7 +28,9 @@ let data = jsonData(filePath)
 const argv = require('minimist')(process.argv.slice(2),
 {
     string: ['streamer'],
+    boolean: ['available'],
     alias: {
+        a: 'available',
         s: 'streamer'
     },
     unknown: function(){
@@ -40,6 +42,7 @@ function getArgs(arg)
     let args =
     {
         "streamer": argv.streamer,
+        "available": argv.available
 
     };
     return args[arg] ;
@@ -49,7 +52,6 @@ function nodeExec(cmd)
 {
     return execSync(cmd, { stdio: [0, 1, 2] });
 }
-
 
 function getStreamer(arg) {
 
@@ -95,6 +97,11 @@ function stream()
             process.exit(1);
 
         }
+
+    }
+    else if(getArgs('available')) {
+
+        console.log(`\n\r${getAllStreamers()}`)
 
     }
 }

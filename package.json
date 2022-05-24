@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "bin": {
-    "twitch-stream-link": "./stream.js"
+    "twitch-stream-link": "bin/stream.js"
   },
   "scripts": {
     "test": "node ./stream.js -s xqc"

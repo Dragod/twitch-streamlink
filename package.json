@@ -9,7 +9,7 @@
   },
   "devDependencies": {},
   "bin": {
-    "stream": "bin/stream.js"
+    "twitch-stream-link": "bin/stream.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

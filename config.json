@@ -1,0 +1,77 @@
+
+{
+    "streamer":
+    [
+        {
+            "name": "xqc",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---xQc---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "asmongold",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---Asmongold---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "shroud",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---Shroud---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "moonmoon",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---MoonMoon---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "datmodz",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---DatModz---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "stermy",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---Stermy---",
+                "quality": "best"
+            }
+
+        }
+    ]
+}

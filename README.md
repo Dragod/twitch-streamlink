@@ -6,7 +6,7 @@ I made this tiny nodejs package because I wanted to remove twitch app from my ph
 
 ### How to use it
 
-```npx twitch-stream-link -s datmodz```
+```npx @pfcode/twitch-stream-link@latest -s shroud```
 
 ![image](https://db3pap002files.storage.live.com/y4mmfUz4iazbK-wOqXNjT3gvctenmdX65Bkr9JMQR0CP2LR5mDtw-rXYvD5dtSWm6vjBH-9Obryj_9CoYdxq8-8blC3DdXb8QhHD_RCubX9J4HEVrgviU68YkhnZ-mj2HbIF2YODPtC_iTszu0eclagftiGOXzI7u3I3YpyfacIg6P147P1Wml9tFkygYUIo9CI?width=510&height=1013&cropmode=none)
 
@@ -34,7 +34,7 @@ Also read this reddit guide to open video streams on android device:
 
 Clone or fork this repo to get your own version of streamer list.
 
-All you need to di is update the ```config.json```:
+All you need to do is update the ```config.json```:
 
 ```json
 

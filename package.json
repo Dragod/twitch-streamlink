@@ -1,6 +1,6 @@
 {
   "name": "@pfcode/twitch-stream-link",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "watch twitch stream on you favourite player",
   "main": "stream.js",
   "dependencies": {

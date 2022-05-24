@@ -70,7 +70,7 @@ function getAllStreamers() {
 
     });
 
-    return `Available streamers names: \n\n\r${availableStreamers}\n\r`
+    return `Available streamers names: \n\n\r${availableStreamers}`
 
 }
 

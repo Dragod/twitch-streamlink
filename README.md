@@ -9,6 +9,7 @@ I made this tiny nodejs package because I wanted to remove twitch app from my ph
 ```bash
 # List of available streamers
 npx @pfcode/twitch-stream-link@latest -a
+
 # Start streaming Shroud if he is online
 npx @pfcode/twitch-stream-link@latest -s shroud
 ```

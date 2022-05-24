@@ -1,13 +1,35 @@
-#!/usr/bin/env node
+// Use streamlink to run twich stream or others stream from the CLI.
 
+const path = require('path')
+const fs = require('fs')
 const execSync = require('child_process').execSync;
-const twitch = "twitch.tv/";
+const jsonPath = '../config.json'
+const filePath = path.resolve(__dirname, jsonPath)
+
+// Read json file
+
+let jsonData = (path) => {
+
+    try {
+
+        return JSON.parse(fs.readFileSync(path))
+
+    } catch (error) {
+
+        console.log(`\n Unable to read from ${path}: ${error}`);
+        process.exit()
+    }
+
+}
+
+let data = jsonData(filePath)
+
 
 const argv = require('minimist')(process.argv.slice(2),
 {
     string: ['streamer'],
     alias: {
-        s: 'streamer',
+        s: 'streamer'
     },
     unknown: function(){
     }
@@ -28,25 +50,53 @@ function nodeExec(cmd)
     return execSync(cmd, { stdio: [0, 1, 2] });
 }
 
-const streamerName = ["zizaran", "datmodz", "moistcr1tikal", "steelmage", "stermy","nugiyen"];
 
-function getStream()
+function getStreamer(arg) {
+
+    const streamer = data.streamer.find(streamer => streamer.name === arg)
+
+    return streamer
+}
+
+function getAllStreamers() {
+
+    let availableStreamers = []
+
+    data.streamer.forEach(streamer => {
+
+        availableStreamers.push(streamer.name)
+
+    });
+
+    return `Available streamers names: \n\n\r${availableStreamers}\n\r`
+
+}
+
+function stream()
 {
+
     if (getArgs('streamer'))
     {
-        // Check if the streamer and the platform are both available, otherwise throw an error.
-        if (streamerName.includes(getArgs('streamer')) === true)
-        {
-            link = `streamlink ${twitch}${getArgs('streamer')} best --title ${getArgs('streamer')}`;
 
-            return nodeExec(link)
+        try {
+
+            const streamer = getStreamer(getArgs('streamer'))
+
+            const streamLink = `streamlink ${streamer.options.url}${streamer.name} ${streamer.options.quality} --title ${streamer.options.title}`
+
+            return nodeExec(streamLink)
+
         }
-        else
-        {
-            console.log("\n\rError, streamer non supported...");
+
+        catch(err) {
+
+            console.log(`\n\rError: ${getArgs('streamer')} is either offline or not a valid name...\n\n\r${getAllStreamers()}`);
+
             process.exit(1);
+
         }
+
     }
 }
 
-getStream();
+stream();

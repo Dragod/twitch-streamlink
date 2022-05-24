@@ -2,14 +2,14 @@
   "name": "@pfcode/twitch-stream-link",
   "version": "3.0.3",
   "description": "watch twitch stream on you favourite player",
-  "main": "./src/stream.js",
+  "main": "src/stream.js",
   "dependencies": {
     "minimist": "^1.2.6",
     "underscore": "^1.13.3"
   },
   "devDependencies": {},
   "bin": {
-    "stream": "./bin/stream.js"
+    "stream": "bin/stream.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

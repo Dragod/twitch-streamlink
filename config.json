@@ -63,24 +63,84 @@
         },
 
         {
-            "name": "stermy",
-            "options":
-            {
-                "platform": "twitch",
-                "url": "twitch.tv/",
-                "title": "Twitch---Stermy---",
-                "quality": "best"
-            }
-
-        },
-
-        {
             "name": "zizaran",
             "options":
             {
                 "platform": "twitch",
                 "url": "twitch.tv/",
                 "title": "Twitch---Zizaran---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "mizkif",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---Mizkif---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "trainwreckstv ",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---Trainwreckstv---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "hasanabi",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---HasanAbi---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "pokimane",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---Pokimane---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "sodapoppin",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---Sodapoppin---",
+                "quality": "best"
+            }
+
+        },
+
+        {
+            "name": "summit1g",
+            "options":
+            {
+                "platform": "twitch",
+                "url": "twitch.tv/",
+                "title": "Twitch---Summit1g---",
                 "quality": "best"
             }
 

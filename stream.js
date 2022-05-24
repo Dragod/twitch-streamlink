@@ -38,9 +38,9 @@ const argv = require('minimist')(process.argv.slice(2),
     },
     unknown: function(){
 
-       // console.log(`\r\n Flag not found.`)
+        console.log(`\r\n Flag not found.`)
 
-       // console.log(`\r\n Available flag: --available/ -a, --atreamer/ -s`);
+        console.log(`\r\n Available flag: --available/ -a, --atreamer/ -s`);
     }
     });
 

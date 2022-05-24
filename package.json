@@ -2,14 +2,14 @@
   "name": "@pfcode/twitch-stream-link",
   "version": "3.0.8",
   "description": "watch twitch stream on you favourite player",
-  "main": "src/stream.js",
+  "main": "stream.js",
   "dependencies": {
     "minimist": "^1.2.6",
     "underscore": "^1.13.3"
   },
   "devDependencies": {},
   "bin": {
-    "twitch-stream-link": "bin/stream.js"
+    "stream.js": "./bin/stream.js"
   },
   "scripts": {
     "test": "node ./stream.js -s xqc"

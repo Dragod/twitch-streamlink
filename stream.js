@@ -1,5 +1,8 @@
 // Use streamlink to run twich stream or others stream from the CLI.
 
+// List available streamers: node stream -a
+// Start streaming: node stream -s xq
+
 const path = require('path')
 const fs = require('fs')
 const execSync = require('child_process').execSync;
@@ -34,6 +37,10 @@ const argv = require('minimist')(process.argv.slice(2),
         s: 'streamer'
     },
     unknown: function(){
+
+       // console.log(`\r\n Flag not found.`)
+
+       // console.log(`\r\n Available flag: --available/ -a, --atreamer/ -s`);
     }
     });
 
@@ -70,7 +77,7 @@ function getAllStreamers() {
 
     });
 
-    return `Available streamers names: \n\n\r${availableStreamers}`
+    return console.table(availableStreamers)
 
 }
 
@@ -92,7 +99,11 @@ function stream()
 
         catch(err) {
 
-            console.log(`\n\rError: ${getArgs('streamer')} is either offline or not a valid name...\n\n\r${getAllStreamers()}`);
+            console.log(`\n\rError: ${getArgs('streamer')} is either offline or not a valid name...\n\r`);
+
+            console.log(`Available streamers:\n\r`);
+
+            getAllStreamers()
 
             process.exit(1);
 
@@ -101,7 +112,9 @@ function stream()
     }
     else if(getArgs('available')) {
 
-        console.log(`\n\r${getAllStreamers()}`)
+        console.log(`\nAvailable streamers:\n\r`);
+
+        getAllStreamers()
 
     }
 }

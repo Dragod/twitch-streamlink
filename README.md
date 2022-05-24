@@ -8,10 +8,60 @@ I made this tiny nodejs package because I wanted to remove twitch app from my ph
 
 ```bash
 # List of available streamers
+node stream -a
+
+# Start streaming Shroud if he is online
+node stream -s shroud
+
+# With npx
+
+# List of available streamers
 npx @pfcode/twitch-stream-link@latest -a
 
 # Start streaming Shroud if he is online
 npx @pfcode/twitch-stream-link@latest -s shroud
+```
+
+### Create a shortcut
+
+```bash
+# Add this code to your .bashrc
+
+# Stream
+
+function stream()
+{
+    if [ "$1" ]; then
+
+    eval "npx @pfcode/twitch-stream-link@latest -s $1"
+
+    else
+
+    echo -e -ne $(alert 'The streamer name given do not exist in config.json. Exit the script...')
+
+    exit
+
+    fi
+}
+
+alias stream=stream
+
+# Reload your terminal then use
+stream zizaran
+```
+
+### Output example
+
+```bash
+$ stream zizaran
+npx: installed 3 in 3.856s
+[cli][info] Found matching plugin twitch for URL twitch.tv/zizaran
+[cli][info] Available streams: audio_only, 160p (worst), 360p, 480p, 720p, 720p60, 1080p60 (best)
+[cli][info] Opening stream: 1080p60 (hls)
+[cli][info] Starting player: "C:\Program Files\VideoLAN\VLC\vlc.exe"
+[cli][info] Player closed
+[cli][info] Stream ended
+[cli][info] Closing currently open stream...
 ```
 
 ![image](https://db3pap002files.storage.live.com/y4mmfUz4iazbK-wOqXNjT3gvctenmdX65Bkr9JMQR0CP2LR5mDtw-rXYvD5dtSWm6vjBH-9Obryj_9CoYdxq8-8blC3DdXb8QhHD_RCubX9J4HEVrgviU68YkhnZ-mj2HbIF2YODPtC_iTszu0eclagftiGOXzI7u3I3YpyfacIg6P147P1Wml9tFkygYUIo9CI?width=510&height=1013&cropmode=none)

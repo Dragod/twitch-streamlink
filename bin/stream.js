@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-let stream =require('../stream')
+let stream = require('../stream')

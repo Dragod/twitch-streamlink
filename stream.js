@@ -1,7 +1,7 @@
 // Use streamlink to run twich stream or others stream from the CLI.
 
 // List available streamers: node stream -a
-// Start streaming: node stream -s xq
+// Start streaming: node stream -s xqc
 
 const path = require('path')
 const fs = require('fs')

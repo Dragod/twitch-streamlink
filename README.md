@@ -1,6 +1,6 @@
 # twitch-stream-link
 
-> Dependencies: [Streamlink](https://pypi.org/project/streamlink/) - [VLC](https://www.videolan.org/vlc/)
+> Dependencies: [Streamlink](https://pypi.org/project/streamlink/) - [VLC](https://www.videolan.org/vlc/) and/or [Mpv](https://mpv.io/)
 
 ![image](https://db3pap002files.storage.live.com/y4m_7HT5DZVcOtjDDME5--vy0jXt4453FUdNbX6l8pV6NcACcgWMFYyPYfylzc_OSoiFGBN1JxtB-fZ9DuerpGZVKAdElIx6713MXW0t4ZAjlqtbBpDjov_2eUFoYXRC1HiFP8EU7xjSpmWdUKOT2noSElkFkEPESXh5PTFBbuKjGmLuF_oO1p0X3gIv1wJPWzO?width=976&height=679&cropmode=none)
 

@@ -9,6 +9,9 @@ I made this tiny nodejs package because I wanted to remove twitch app from my ph
 ### How to use it
 
 ```bash
+
+# git clone this repo then npm i
+
 # List of available streamers
 node stream -a
 
@@ -78,7 +81,7 @@ You can watch your favourite streamer as long as you have [streamlink](https://s
 
 # Mobile
 
-This work on mobile using termux with:[https://github.com/termux/x11-packages](https://github.com/termux/x11-packages)
+This work on mobile using termux with: [x11-packages](https://github.com/termux/x11-packages)
 
 ### How to install VLC and MPV on mobile
 

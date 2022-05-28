@@ -25,8 +25,11 @@ let jsonData = (path) => {
 
 }
 
+// Store json data into a variable
+
 let data = jsonData(filePath)
 
+// Setup CLI arguments with minimist
 
 const argv = require('minimist')(process.argv.slice(2),
 {
@@ -40,7 +43,7 @@ const argv = require('minimist')(process.argv.slice(2),
 
         console.log(`\r\n Flag not found.`)
 
-        console.log(`\r\n Available flag: --available/ -a, --atreamer/ -s`);
+        console.log(`\r\n Available flag: --available/ -a, --streamer/ -s`);
     }
     });
 
@@ -62,9 +65,7 @@ function nodeExec(cmd)
 
 function getStreamer(arg) {
 
-    const streamer = data.streamer.find(streamer => streamer.name === arg)
-
-    return streamer
+    return data.streamer.find(streamer => streamer.name === arg)
 }
 
 function getAllStreamers() {

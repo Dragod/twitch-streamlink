@@ -55,6 +55,18 @@ alias stream=stream
 stream zizaran
 ```
 
+### One click stream
+
+You can create a ```.bat``` file to run a streamer with one click
+
+Create a ```xqc.bat``` for example in your desktop then add this snippet
+
+```bat
+@echo off
+npx @pfcode/twitch-stream-link@latest -s xqc
+```
+
+Xqc stream will run in one click :)
 ### Output example
 
 ```bash

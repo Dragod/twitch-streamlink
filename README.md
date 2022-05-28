@@ -137,6 +137,6 @@ All you need to do is update the ```config.json```, jsut add/remove streamers:
 
 ```
 
-Then you need to publish your own package for it work, with npm publish.
+Then you need to publish your own package for it work with Npx.
 
 [https://bugfender.com/blog/how-to-create-an-npm-package/](https://bugfender.com/blog/how-to-create-an-npm-package/)

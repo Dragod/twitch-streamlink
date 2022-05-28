@@ -4,12 +4,20 @@ const argv = require('./cli-args.js')
 
 class Stream {
 
+    /**
+    * The constructor function is a function that is called when an object is created from a class.
+    * @param path - The path to the file you want to read.
+    */
     constructor(path){
 
         this.path = path
 
     }
 
+    /**
+     * It reads the data from the file and returns it as a JSON object.
+     * @returns The data from the file.
+     */
     readData(){
 
         try {
@@ -25,6 +33,11 @@ class Stream {
 
     }
 
+    /**
+     * It reads the data from the JSON file, then it returns the streamer object that matches the name
+     * passed in as an argument.
+     * @returns The streamer object that matches the name passed in via the command line.
+     */
     async getStreamer() {
 
         let data = await this.readData()
@@ -33,6 +46,11 @@ class Stream {
 
     }
 
+    /**
+    * It reads the data from the JSON file, then it loops through the data and pushes the streamer
+    * names into an array.
+    * @returns An array of streamer names.
+    */
     async getAllStreamers() {
 
         let data = await this.readData()
@@ -49,6 +67,16 @@ class Stream {
 
     }
 
+    /**
+     * "If the user passes in a streamer name, then get the streamer's information and start the
+     * stream, otherwise if the user passes in the available flag, then get all the available streamers
+     * and display them."
+     *
+     * The first thing I do is check if the user passed in a streamer name. If they did, then I call
+     * the getStreamer function and pass in the streamer name. The getStreamer function returns a
+     * promise, so I use the then method to get the streamer object
+     * @returns The streamer object.
+     */
     async start()
     {
 

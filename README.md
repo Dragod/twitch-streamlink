@@ -66,7 +66,8 @@ Create a ```xqc.bat``` for example in your desktop then add this snippet
 npx @pfcode/twitch-stream-link@latest -s xqc
 ```
 
-Xqc stream will run in one click :)
+Xqc stream will run in one click if he is online :)
+
 ### Output example
 
 ```bash

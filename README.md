@@ -18,6 +18,12 @@ node stream -a
 # Start streaming Shroud if he is online
 node stream -s shroud
 
+# Start stream using npm scripts
+
+npm run ziz
+
+npm run shroud
+
 # With npx
 
 # List of available streamers

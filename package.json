@@ -12,7 +12,8 @@
     "stream.js": "./bin/stream.js"
   },
   "scripts": {
-    "test": "node ./stream.js -s xqc"
+    "ziz": "node ./stream.js -s zizaran",
+    "xqc": "node ./stream.js -s xqc"
   },
   "author": "Fabio Paniconi",
   "license": "MIT",

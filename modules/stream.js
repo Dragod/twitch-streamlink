@@ -1,6 +1,8 @@
 const fs = require('fs')
 const execSync = require('child_process').execSync;
 const argv = require('./cli-args.js')
+const CmdOutput = require('./cmd-output')
+const os = require('os');
 
 class Stream {
 
@@ -113,9 +115,38 @@ class Stream {
 
         else if(argv.available) {
 
-            console.log(`\nAvailable streamers:\n\r`);
+            console.log(`\nAvailable streamers:\n\r`)
 
             await this.getAllStreamers().then(data => { console.log(data) })
+
+        }
+
+        else if(argv.help) {
+
+            console.log(`\n\rIn order to use twitch-stream-link package you need:\n\n\r - Python 3\n\r - Pip package manager\n\r - Streamlink (from "pip")\n\r - VLC\n\r`)
+
+            console.log(`--------------------------`);
+
+            if(os.platform() === "win32") {
+
+                let vlc = new CmdOutput('vlc', ['--version'])
+
+                vlc.exeExist()
+            }
+            else {
+
+                console.log('\n\rYou need to install VLC player as a dependency or the player was installed in a different disk. \n\rDefault path: C:/Program Files/VideoLAN/VLC/vlc.exe\n\r');
+            }
+
+            console.log(`Installed package/s:\n\r`)
+
+            let python = new CmdOutput('python', ['--version'])
+
+            let streamlink = new CmdOutput('streamlink', ['--version'])
+
+            python.pid()
+
+            streamlink.pid()
 
         }
     }

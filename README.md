@@ -12,6 +12,9 @@ I made this tiny nodejs package because I wanted to remove twitch app from my ph
 
 # git clone this repo then npm i
 
+# Help, list of dependencies
+node stream -h
+
 # List of available streamers
 node stream -a
 
@@ -25,6 +28,9 @@ npm run ziz
 npm run shroud
 
 # With npx
+
+# Help, list of dependencies
+npx @pfcode/twitch-stream-link@latest -h
 
 # List of available streamers
 npx @pfcode/twitch-stream-link@latest -a
